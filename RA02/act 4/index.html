@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cercador de pel·lícules amb accés als resultats de TMDB: milions de títols, un sol cercador.">
+    <title>Buscador de pel·lícules</title>
+    <link rel="icon" href="palomitas-de-maiz.png" type="image/png">
+</head>
+<body>
+
+<header>
+    <a href="https://www.themoviedb.org/?language=ca">
+        <img src="tmdb.svg" alt="Logotip de TMDB" width="150" height="150">
+    </a>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Buscador</a></li>
+            <li><a href="contacte.html">Contacte</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>BUSCAR una pel·lícula</h1>
+    <p>Milions de títols, un sol cercador.</p>
+
+    <form method="get" action="https://www.themoviedb.org/search">
+        <label for="searchInput">Títol de la pel·lícula</label>
+        <input type="search" id="searchInput" name="query" placeholder="Cerca una pel·lícula, per exemple: 'The Matrix'" required>
+        <button type="submit" id="searchButton">Cercar</button>
+    </form>
+
+    <section id="resultsContainer">
+        <h2>Resultats</h2>
+
+        <article>
+            <img src="matrix.jpg" alt="The Matrix" width="200" height="300">
+            <h3>The Matrix</h3>
+            <p>Me encanta matrix</p>
+        </article>
+
+        <article>
+            <img src="spiderman.jpg" alt="Spiderman" width="200" height="300">
+            <h3>Spiderman</h3>
+            <p>Me encanta spiderman</p>
+        </article>
+
+        <article>
+            <img src="darknight.jpg" alt="The Dark Knight" width="200" height="300">
+            <h3>The Dark Knight</h3>
+            <p>Me encanta el cavaller de la nit</p>
+        </article>
+    </section>
+</main>
+<footer>
+    <p> 2026 The Movie Database — Maqueta de disseny</p>
+</footer>
+
+</body>
+</html>
